@@ -1,0 +1,166 @@
+#block-notification {
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 16px;
+    gap: 16px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.f-function-block-notification {
+    opacity: 0;
+}
+.f-function-notification {
+    z-index: 9999999999;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    min-height: 75px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 500px;
+}
+
+.f-function-notification-ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.f-function-notification-ico.info-notification {
+    color: #2164BE !important;
+    background-color: rgba(149, 191, 255, 0.4) !important;
+    fill: #2164BE !important;
+}
+
+.f-function-notification-ico.error-notification {
+    color: #D10000 !important;
+    background-color: rgba(209, 0, 0, 0.4) !important;
+    fill: #D10000 !important;
+}
+
+.f-function-notification-ico.success-notification {
+    color: #0f7a11 !important;
+    background-color: rgba(72, 159, 73, 0.4) !important;
+    fill: #0f7a11 !important;
+}
+
+.f-function-notification-ico.warning-notification {
+    color: #ffc107 !important;
+    background-color: rgba(255, 193, 7, 0.4) !important;
+    fill: #ffc107 !important;
+}
+
+.f-function-notification-inside {
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    gap: 9px;
+}
+
+.f-function-notification-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.f-function-notification-header h4 {
+    font-family: "SF UI Display", sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.f-function-notification-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-function-notification-body span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #656565;
+    white-space: normal;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-wrap: anywhere;
+}
+
+.f-function-notification-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.f-function-notification-visible {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.close-not {
+    cursor: pointer;
+}
+
+.f-notification-progress {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(100% - 40px);
+}
+
+.f-notification-progress-bar {
+    position: relative;
+    border: 0;
+    height: 6px;
+    background-color: #e9ecef !important;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+}
+
+.f-notification-progress-value {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    transform: rotate(180deg) scaleX(1);
+    height: 6px;
+    width: 100%;
+}
+
+.f-notification-progress-value.info {
+    background-color: rgba(149, 191, 255, 0.4) !important;
+}
+
+.f-notification-progress-value.error {
+    background-color: rgba(209, 0, 0, 0.4) !important;
+}
+
+.f-notification-progress-value.success {
+    background-color: rgba(72, 159, 73, 0.4) !important;
+}
+
+.f-notification-progress-value.warning {
+    background-color: rgba(255, 193, 7, 0.4) !important;
+}
+
+@keyframes notification-progress-animated {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
