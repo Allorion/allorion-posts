@@ -1,4 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import path from 'path';
 
-export default nextConfig;
+export default {
+  distDir: 'out',
+};

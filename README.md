@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Данный проект выполнен как тестовое задание.
+Развернута веб версия сайта по ссылке https://allorion-site-post.netlify.app/
 
 ## Getting Started
 
